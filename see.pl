@@ -87,6 +87,8 @@ else {    ## No options passed.
     check_closed_ports();
 }
 
+print_info("\t \\_ ITFINDEN SCRIPT @ITFINDEN \n");
+
 ## Colors ##
 
 sub print_info {
