@@ -336,7 +336,6 @@ sub domain_resolv {
             'cbl.abuseat.org'             => 'Abuseat.org',
             'relays.visi.com'             => 'Visi.com',
             'zen.spamhaus.org'            => 'Spamhaus',
-            'bl.spamcannibal.org'         => 'Spamcannibal',
             'ubl.unsubscore.com'          => 'LashBack',
             'b.barracudacentral.org'      => 'Barracuda',
         );
