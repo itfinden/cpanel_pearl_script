@@ -423,7 +423,7 @@ sub domain_resolv {
         sub sent_email {
             open FILE, "/var/log/exim_mainlog";
 
-            print_warning("\nEmails by user: ");
+            print_warning("\nEmails por usuario: ");
             print "\n\n";
             our @system_users = "";
 
@@ -454,7 +454,7 @@ sub domain_resolv {
             print " Total:  " . scalar( @system_users - 1 );
             print "\n===================\n";
 
-            print_warning("\nEmail accounts sending out mail:\n\n");
+            print_warning("\nCuentas de email que envian correos:\n\n");
 
             open FILE, "/var/log/exim_mainlog";
             while ( $lines_email = <FILE> ) {
@@ -486,7 +486,7 @@ sub domain_resolv {
 
 ## Section for current working directories
 
-            print_warning("\nDirectories mail is originating from:\n\n\n");
+            print_warning("\nDirectorio que envia correos:\n\n\n");
 
             open FILE, "/var/log/exim_mainlog";
             my @dirs;
@@ -526,7 +526,7 @@ sub domain_resolv {
 	    }
             print "\n===================\n";
 
-            print_warning("\nTop 20 Email Titles:\n\n\n");
+            print_warning("\nTop 20 Email asuntos:\n\n\n");
 
             open FILE, "/var/log/exim_mainlog";
             my @titles;
